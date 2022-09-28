@@ -1,0 +1,30 @@
+.arrow-1 {
+  margin-top: 21px;
+  transform: rotate(90deg);
+  width:50px;
+  height:15px;
+  display: flex;
+}
+.arrow-1:before {
+  content: "";
+  /* background: currentColor; */
+  background-color: #90a2f6;
+  width:7.5px;
+  clip-path: polygon(0 5px,calc(100% - 7.5px) 5px,calc(100% - 7.5px) 0,100% 50%,calc(100% - 7.5px) 100%,calc(100% - 7.5px) calc(100% - 5px),0 calc(100% - 5px));
+  animation: a1 1.5s infinite linear;
+}
+@keyframes a1 {
+  90%,100%{flex-grow: 1}
+}
+
+/**/
+/* body {
+  display: grid;
+  grid-template-columns: repeat(auto-fit,minmax(250px,1fr));
+  grid-auto-rows: 130px;
+  place-items:center;
+}
+
+* {
+  box-sizing: border-box;
+} */
